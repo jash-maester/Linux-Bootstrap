@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Dependencies
-sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man-db rofi pavucontrol gnome-calculator light flameshot pulseaudio-utils dash feh stow zsh git
+sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man-db rofi pavucontrol gnome-calculator light flameshot pulsemixer pulseaudio-utils dash feh stow zsh git
 
 # Install DWM
 cd ~/
