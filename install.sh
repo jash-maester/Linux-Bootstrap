@@ -1,46 +1,49 @@
 #!/bin/bash
 
-cd ~/
-git clone https://github.com/jash-maester/dwm-jash &&
-git clone https://github.com/jash-maester/dwmblocks-jash &&
-git clone https://github.com/jash-maester/dmenu-jash &&
-git clone https://github.com/jash-maester/st-jash &&
-git clone https://github.com/jash-maester/slock &&
-git clone https://github.com/cdown/clipnotify &&
-git clone https://github.com/cdown/clipmenu &&
-git clone https://github.com/jash-maester/skippy-xd &&
-
 # Dependencies
-sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man xbanish rofi pavucontrol gnome-calculator light flameshot pulseaudio-utils dash feh stow zsh
+sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man-db rofi pavucontrol gnome-calculator light flameshot pulseaudio-utils dash feh stow zsh git
 
 # Install DWM
+cd ~/
+git clone https://github.com/jash-maester/dwm-jash &&
 cd ~/dwm-jash && sudo make clean install
 
 # Install DWMBLOCKS
+cd ~/
+git clone https://github.com/jash-maester/dwmblocks-jash &&
 cd ~/dwmblocks-jash && sudo make clean install
 
 # Install Dunst
 sudo apt install dunst -y
 
 # Install DMENU
+cd ~/
+git clone https://github.com/jash-maester/dmenu-jash &&
 cd ~/dmenu-jash && sudo make clean install
 
 # Install ST
+cd ~/
+git clone https://github.com/jash-maester/st-jash &&
 cd ~/st-jash && sudo make clean install
 mkdir -p ~/.fonts
 cp fonts/* -r ~/.fonts/
-echo 'bindkey '\e[3~' delete-char' >> ~/.zshrc
-echo 'bindkey '\e[3~' delete-char' >> ~/.bashrc
+#echo "bindkey '\e[3~' delete-char" >> ~/.zshrc
 
 # Install Slock
+cd ~/
+git clone https://github.com/jash-maester/slock &&
 cd ~/slock && sudo make clean install
 sudo groupadd nobody
 
 # Install Clipnotify
 sudo apt install -y xsel xclip libxfixes-dev libxfixes3 x11proto-core-dev libx11-dev
+cd ~/
+git clone https://github.com/cdown/clipnotify &&
 cd ~/clipnotify && sudo make install
 
 # Install Clipmenu
+cd ~/
+git clone https://github.com/cdown/clipmenu &&
 cd ~/clipmenu && sudo make install
 
 # Install Jonaburg's Fork of Picom
@@ -51,7 +54,14 @@ cd ~/picom && meson --buildtype=release . build && ninja -C build && sudo ninja 
 
 # Install skippy-xd
 sudo apt install -y libjpeg-dev libgif-dev
+cd ~/
+git clone https://github.com/jash-maester/skippy-xd &&
 cd ~/skippy-xd && sudo make install
+
+# Install Xbanish
+cd ~/
+git clone https://github.com/jcs/xbanish
+cd xbanish && sudo make install
 
 # Stow-files
 cd ~/
