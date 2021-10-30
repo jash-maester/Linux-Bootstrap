@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Dependencies
-sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man-db rofi pavucontrol gnome-calculator light flameshot pulsemixer pulseaudio-utils dash feh stow zsh git xsel xclip libxfixes-dev libxfixes3 x11proto-core-dev libx11-dev libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev ninja-build meson asciidoc libjpeg-dev libgif-dev dunst libxrandr-dev libpcre3-dev  libxi-dev libxt-dev
+sudo apt install -y gcc x11-xserver-utils libx11-dev libxft-dev libxinerama-dev libxinerama1 cmus numlockx man-db rofi pavucontrol gnome-calculator light maim pulsemixer pulseaudio-utils dash feh stow zsh git xsel xclip libxfixes-dev libxfixes3 x11proto-core-dev libx11-dev libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev ninja-build meson asciidoc libjpeg-dev libgif-dev dunst libxrandr-dev libpcre3-dev  libxi-dev libxt-dev
 
 # Install DWM
 cd ~/
